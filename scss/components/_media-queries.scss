@@ -1,0 +1,319 @@
+//Iphone 
+@media (min-width: 375px) {
+    //HEADER
+    #headerText {
+        font-size: 3em;       
+    }
+    //title images
+    .titleImage img {
+        height: auto;
+        width: 80%;
+    }
+    
+    #openBody {
+        top: -230px;
+    }
+    
+    #openH1{
+        top: -80px;
+        left: 10px;
+    }
+    
+    #closeH1{
+        top: 140px;
+        left: 320px;
+    }
+    
+    #closeBody {
+        top: 320px;
+    }
+}
+
+//Iphone X and up
+@media (min-width: 375px)
+and (min-height: 800px) {
+    //HEADER
+    #headerText {
+        font-size: 3em;       
+    }
+    //title images
+    .titleImage img {
+        height: auto;
+        width: 90%;
+    }    
+    #openBody {
+        top: -300px;
+    }
+    
+    #openH1{
+        top: -80px;
+        left: 10px;
+    }
+    
+    #closeH1{
+        top: 140px;
+        left: 320px;
+    }
+    
+    #closeBody {
+        top: 380px;
+    }
+}
+
+//landscape phones
+
+@media (max-height: 340px) {
+    //HEADER
+    #headerText {
+        position: absolute;     
+        top: 40px;
+    }
+    #contactButton h3 {
+        margin-top: 20px; 
+        font-size: 1.2em;        
+    }
+    //title images
+    .titleImage img {
+        display: none;
+    }
+}
+
+@media (max-height: 380px) {
+    //HEADER
+    #headerText {
+        position: absolute;     
+        top: 40px;
+    }
+    #contactButton h3 {        
+        font-size: 1.6em;        
+    }
+    //title images
+    .titleImage img {
+        display: none;
+    }
+}
+
+@media (max-height: 420px)
+and (min-width: 730px) {
+    //HEADER
+    #headerText {
+        position: absolute;     
+        top: 40px;
+        font-size: 3.8em;
+    }
+    #contactButton h3 {        
+        font-size: 1.6em;        
+    }
+    //title images
+    .titleImage img {
+        display: none;
+    }
+}
+
+//tablets
+@media (min-width: 768px) {
+    //general 
+    .sectionHeader {
+        font-size: 3em;
+    }
+    //Header
+    #headerText {
+        font-size: 5em;       
+    }
+    //title images
+    .titleImage img {
+        height: auto;
+        width: 100%;
+    }
+    #closeH1{
+        top: 220px;
+        left: 520px;
+    }    
+    #closeBody {
+        top: 410px;
+    }
+    //hamburger
+    .menu-btn {
+        display: none;
+    }
+    //text nav
+    .textNav {
+        display: flex;
+    }
+    //Portfolio
+    #portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+        grid-gap: 20px;    
+    }
+    #portfolio .sectionHeader {
+        grid-column: 1/3;
+    }
+    //big message
+    #bigMessage {
+        font-size: 1.6em;
+    }    
+    #underline {
+        width: 370px;
+    }
+}
+
+//Ipad pro
+@media (min-width: 1024px)
+and (min-height: 1366px) {
+    //Header
+    #headerText {
+        font-size: 6em;       
+    }
+    #contactButton {
+        align-self: center;
+    }
+    //title images
+    #openBody {
+        top: -340px;
+    }
+    #openH1{
+        top: -110px;
+        left: 10px;
+    }    
+    #closeH1{
+        top: 280px;
+        left: 650px;
+    }    
+    #closeBody {
+        top: 400px;        
+    }
+    //text nav
+    .textNav {
+        font-size: 1.2em;
+    }
+    //big message
+    #bigMessage {
+        font-size: 2.4em;
+    }
+    #underline {
+        width: 555px;
+    }
+}
+
+//desktops 
+@media (min-width: 900px) 
+and (min-height: 900px) {
+    //general
+    #headerContent,
+    #portfolio,
+    #aboutContent,
+    #bigMessage,
+    .contactContent
+    {
+        max-width: 90%;
+    }
+    //HEADER
+    #contactButton h3 {
+        font-size: 1.8em;        
+    }
+    //text nav
+    .textNav {
+        left: 62%;
+    }
+    //contact button 
+    #contactButton {
+        margin: 0 auto 0 0;
+    }
+    //title images 
+    #closeBody {
+        top: 495px;
+    }
+    //about and contact texts
+    #about p,
+    #contact p {
+        font-size: 1.6em;
+    }
+    //portfolio
+    #portfolio {        
+        grid-template-columns: 1fr;       
+    }
+    #portfolio .sectionHeader {
+        grid-column: 1/2;
+    }
+    .projectCard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 0 40px;
+    }
+    .projectCard a {
+        grid-row: 1/2;
+        font-size: 1.5em;        
+    }   
+    .projectCard div {
+        grid-row: 1/3;
+    } 
+    .projectCard p {
+        font-size: 1.2em;  
+        grid-row: 2/3;      
+    }
+    .leftProject a {        
+        grid-column: 2/3;
+    }
+    .leftProject div {        
+        grid-column: 1/2;
+    }
+    .leftProject p {        
+        grid-column: 2/3;
+    }
+    .rightProject a {        
+        grid-column: 1/2;
+    }
+    .rightProject div {
+        grid-column: 2/3;
+    }
+    .rightProject p {
+        grid-column: 1/2;
+    }
+}
+
+@media (min-width: 1200px)  {
+    //general
+    #headerContent,
+    #portfolio,
+    #aboutContent,
+    #bigMessage,
+    .contactContent
+    {
+        max-width: 85%;
+    }
+    //HEADER
+    #headerText {
+        font-size: 7em;       
+    }
+    //title images
+    #openBody {
+        top: -260px;
+    }    
+    #openH1{
+        top: -110px;
+        left: 10px;
+    }    
+    #closeH1{
+        top: 300px;
+        left: 760px;
+    }    
+    #closeBody {
+        top: 540px;
+    }
+    //text nav
+    .textNav {
+        left: 70%;
+    }
+    .textNav h3 {
+        font-size: 1.3em;
+    }
+    //big message
+    #bigMessage {
+        font-size: 2.5em;
+    }
+    #underline {
+        width: 575px;
+    }
+}

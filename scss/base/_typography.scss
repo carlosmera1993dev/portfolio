@@ -1,0 +1,39 @@
+//variables
+$color-primary: #ECB800;
+$color-secondary: #EEEEEE;
+$color-black: #000;
+//font styles
+// font-family: 'Cutive', serif;
+// font-family: 'Cutive Mono', monospace;
+// font-family: 'Heebo', sans-serif;
+
+body {
+    font-family: 'Heebo', sans-serif;
+    color: $color-secondary;
+}
+
+header {
+    color: $color-secondary;
+}
+
+.sectionHeader{
+    color: $color-primary;
+}
+
+.projectCard a h3 {
+    color: $color-primary;
+}
+.projectCard p,
+#aboutContent p {
+    font-family: 'Cutive Mono', monospace;
+}
+
+#contactOptions h1 {
+    font-family: 'Cutive', serif;
+    font-weight: 500;
+}
+
+.contactContent p {
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 500;
+}

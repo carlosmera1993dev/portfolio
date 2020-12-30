@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Charlie Mera</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&family=Heebo:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class='overlay'>
+        <div id='contactOptions'>
+            <div>
+                <a href="mailto:carlosmera1993@example.com?subject=Testing out mailto!">
+                    <div class="contactIcons"><img src="images/contactIcons/email.png" alt="emailIcon"></div>
+                    <h1>Email</h1>
+                </a>                
+            </div>
+            <div>
+                <a href="https://wa.link/lcud4u" target="_blank">
+                    <div class="contactIcons"><img src="images/contactIcons/whatsapp.png" alt="whatsappIcon"></div>
+                    <h1>Whatsapp</h1></a>                
+            </div>            
+        </div>
+    </div>
+    <header>        
+        <div id='headerContent'>
+            <div class='menu-btn'>
+                <div class='menu-btn_burger'>                    
+                </div>
+                <div class='navIcons'>
+                    <div class="navOption"><a href="#portfolio"><img src="images/navIcons/suitcase 1.png" alt=""></a></div>
+                    <div class="navOption"><a href="#about"><img src="images/navIcons/user 1.png" alt=""></a></div>
+                    <div class="navOption"><a href="#contact"><img src="images/navIcons/contact 1.png" alt=""></a></div>
+                </div>
+            </div>    
+            <div class='textNav'>
+                <h3><a href="#portfolio">portafolio</a></h3>
+                <h3><a href="#about">sobre mí</a></h3>
+                <h3><a href="#contact">contacto</a></h3>
+            </div>        
+            <div id='headerText'>
+                <div class='titleImage' id='openBody'><img  src="images/titleImages/body.png" alt="tagImage"></div>
+                <div class='titleImage' id='openH1'><img src="images/titleImages/h1.png" alt="tagImage"></div>
+                <div class='titleImage' id='closeH1'><img src="images/titleImages/closeH1_.png" alt="tagImage"></div>
+                <div class='titleImage' id='closeBody'><img src="images/titleImages/closeBody.png" alt="tagImage"></div>
+                <span>H</span><span>o</span><span>l</span><span>a</span><span>,</span>
+                <br>
+                <span>S</span><span>o</span><span>y</span>
+                <span id="charlie">C</span><span>h</span><span>a</span><span>r</span><span>l</span><span>i</span><span>e</span><span>,</span>
+                <br>                                
+                <span>w</span><span>e</span><span>b</span>
+                <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span><span>.</span>
+            </div>
+            <!-- <span>d</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span>
+                <span>w</span><span>e</span><span>b</span><span>.</span> -->
+            <div id='contactButton'>
+                <h3><a href="#">Contáctame</a></h3>
+            </div>
+        </div>
+
+    </header>
+    <main>        
+        <div id="portfolio">
+            <h2 class='sectionHeader'>Portafolio_</h2>
+            <div class='projectCard leftProject'>
+                <a href="#"><h3>Project's Name</h3></a>
+                <div class='projectImage'><a href="#"><img src="" alt="project thumbnail"></a></div>
+                <p>Short description of the project <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>            
+            </div>
+            <div class='projectCard rightProject'>
+                <a href="#"><h3>Project's Name</h3></a>
+                <div class='projectImage'><a href="#"><img src="" alt="project thumbnail"></a></div>
+                <p>Short description of the project <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>            
+            </div>
+            <div class='projectCard leftProject'>
+                <a href="#"><h3>Project's Name</h3></a>
+                <div class='projectImage'><a href="#"><img src="" alt="project thumbnail"></a></div>
+                <p>Short description of the project <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>            
+            </div>
+            <div class='projectCard rightProject'>
+                <a href="#"><h3>Project's Name</h3></a>
+                <div class='projectImage'><a href="#"><img src="" alt="project thumbnail"></a></div>
+                <p>Short description of the project <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>            
+            </div>
+        </div>
+        <div id='about'>
+            <div class='aboutLines' id="longLine"></div>
+            <div class='aboutLines' id='shortLine'></div>
+            <div id="aboutContent">
+                <h2 class='sectionHeader'>_Sobre mí</h2>
+                <p>Hola! Mi nombre es Carlos Mera, soy un desarrollador web y guitarrista ubicado en Quito, Ecuador. 
+                    Me dedico a hacer ...
+                    <br>Actualmente estoy trabajando con HTML, CSS, Javascript y Bootstrap_5.
+                </p>
+            </div>
+        </div>
+        <div id="bigMessage">
+            <h1>Siempre estoy<br>abierto a<br>desarrollar<br>nuevos proyectos.<br>
+            Tienes<br>una idea?<br>
+            <span id="letsTalk"><a href="#bigMessage h1">Hablemos.</a></span></h1>
+            <div id="underline"></div>
+        </div>
+    </main>
+    <footer>
+        <div id="contact">
+            <div class="contactContent">
+                <h2 class='sectionHeader'>Contacto_</h2>
+                <p>Carlos Mera</p>
+                <p><a href="">Email: carlosmera1993@example.com</a></p>
+                <p><a href="">Whatsapp: +593-992-764-757</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
