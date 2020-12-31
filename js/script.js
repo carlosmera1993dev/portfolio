@@ -13,6 +13,7 @@ const contactOptions = document.querySelector('#contactOptions');
 const letsTalk = document.querySelector('#letsTalk');
 
 
+
 //hamburger event
 
 menuBtn.addEventListener('click', ()=> {
@@ -62,3 +63,36 @@ overlay.addEventListener('click', (event) => {
     overlayOn = false;
     overlay.classList.remove('showOverlay');    
 })
+
+//Scroll Effects
+function scrollAppear() {
+    const leftContent = document.querySelectorAll('.leftProject');
+    const rightContent = document.querySelectorAll('.rightProject');
+    const screenPosition = window.innerHeight / 1.3;
+    for (let i = 0; i < leftContent.length; i++) {
+        const leftContentPosition = leftContent[i].getBoundingClientRect().top;        
+        if (leftContentPosition < screenPosition) {
+            leftContent[i].classList.add('showLeft');
+        }
+    }
+    for (let i = 0; i < rightContent.length; i++) {
+        const rightContentPosition = rightContent[i].getBoundingClientRect().top;        
+        if (rightContentPosition < screenPosition) {
+            rightContent[i].classList.add('showRight');
+        }
+    }
+};
+
+window.addEventListener('scroll', scrollAppear);
+
+//underline animation 
+function animateUnderline() {    
+    const underline = document.querySelector('.underlineAnimation');
+    const screenPosition = window.innerHeight / 1.15;
+    const underlinePosition = underline.getBoundingClientRect().top;
+    if (underlinePosition < screenPosition) {
+        underline.classList.add('showUnderlineAnimation');
+    }
+};
+
+window.addEventListener('scroll', animateUnderline);

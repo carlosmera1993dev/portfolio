@@ -37,13 +37,14 @@ h2 {
     z-index: 1;
     place-items: center;
     display: grid;
-    transform: translateY(-100vh);    
-    
+    transform: translateY(-100vh); 
+    opacity: 0;  
+    transition: transform .2s ease-in, opacity .2s ease-in;     
 }
 
-.showOverlay {   
-    transition: transform .1s ease-in;
+.showOverlay {       
     transform: translateY(0);
+    opacity: 1;
 }
 
 
@@ -121,11 +122,11 @@ header {
 
 .titleImage img {
     height: auto;
-    width: 70%;
+    width: 65%;
 }
 
 #openBody {
-    top: -180px;
+    top: -160px;
 }
 
 #openH1{
@@ -139,8 +140,28 @@ header {
 }
 
 #closeBody {
-    top: 260px;
+    top: 220px;
+    overflow-y: hidden;
 }
+
+// #openBody {
+//     top: -80%;
+// }
+
+// #openH1{
+//     top: -50px;
+//     left: 10px;
+// }
+
+// #closeH1{
+//     top: 120px;
+//     left: 260px;
+// }
+
+// #closeBody {
+//     top: 220px;
+//     overflow-y: hidden;
+// }
 
 //Text Nav
 
@@ -166,10 +187,11 @@ header {
 
 #contactButton h3 {    
     color: $color-primary; 
-    font-size: 1.6em;
+    font-size: 1.4em;
     border: $color-primary 4px solid;
     padding: 10px;
     transition: background-color .4s ease-in, color .4s ease-in;
+    margin-bottom: 20px;
 }
 
 //hamburger icon
@@ -253,6 +275,10 @@ main {
     padding: 50px 0;
 }
 
+.projectCard a h3 {
+    transition: color .2s ease-in;
+}
+
 .projectCard {
     padding-top: 30px;
 }
@@ -262,6 +288,7 @@ main {
     height: 150px;
     border: solid 6px $color-primary;
     margin-top: 30px;
+    transition: .2s ease-in;
 }
 
 //ABOUT
@@ -318,9 +345,19 @@ main {
 
 #underline {
     width: 230px;
-    height: 15px;
-    background-color: $color-primary;
+    height: 15px;    
     margin-top: 0;
+}
+
+.underlineAnimation {
+    width: 0%;
+    height: 100%;
+    background-color: $color-primary;
+    transition: width .4s ease-in;
+}
+
+.showUnderlineAnimation {
+    width: 100%;
 }
 
 //CONTACT
@@ -343,7 +380,7 @@ main {
 }
 
 .contactContent p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: $color-black;    
 }
 
@@ -367,10 +404,21 @@ main {
     transform: scale(1.1);
 }
 
+//overlay
 #contactOptions h1:hover,
 #contactOptions div:hover {
     filter: invert(50%);
 }
+
+//portfolio
+.projectImage:hover {    
+    border: solid 6px $color-secondary;
+}
+
+.projectCard a h3:hover {
+    color: $color-secondary;
+}
+
 
 //ANIMATIONS
 //hamburger icon
@@ -428,4 +476,27 @@ main {
         transform: scale(1,1);
         transform: translateY(0);
     }
+}
+
+//scroll animation 
+.leftProject {
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: .5s all ease-in;
+}
+
+.showLeft {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.rightProject {
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: .5s all ease-in;
+}
+
+.showRight {
+    transform: translateX(0);
+    opacity: 1;
 }
