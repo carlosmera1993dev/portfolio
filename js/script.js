@@ -88,7 +88,7 @@ window.addEventListener('scroll', scrollAppear);
 //underline animation 
 function animateUnderline() {    
     const underline = document.querySelector('.underlineAnimation');
-    const screenPosition = window.innerHeight / 1.15;
+    const screenPosition = window.innerHeight / 1.18;
     const underlinePosition = underline.getBoundingClientRect().top;
     if (underlinePosition < screenPosition) {
         underline.classList.add('showUnderlineAnimation');
@@ -96,3 +96,18 @@ function animateUnderline() {
 };
 
 window.addEventListener('scroll', animateUnderline);
+
+//hide html tag decoration if it touches yellow border
+function hideDecoration() {
+    const htmlTagDecoration = document.querySelector('#closeBody');
+    let htmlTagBottom = htmlTagDecoration.getBoundingClientRect().bottom;
+    const headerArea = document.querySelector('header');
+    let headerBottom = headerArea.getBoundingClientRect().bottom;
+    if (htmlTagBottom === headerBottom || htmlTagBottom > headerBottom) {        
+        htmlTagDecoration.style.opacity = 0;
+    } else if (htmlTagBottom < headerBottom) {
+        htmlTagDecoration.style.opacity = 1;
+    }
+}
+
+window.addEventListener('resize', hideDecoration);

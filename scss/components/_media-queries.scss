@@ -258,7 +258,7 @@ and (min-height: 900px) {
     {
         max-width: 90%;
     }
-    //HEADER
+    //HEADER    
     #contactButton h3 {
         font-size: 1.8em;        
     }
@@ -408,5 +408,17 @@ and (max-height: 700px) {
     }
     #underline {
         width: 575px;
+    }
+}
+
+@media (min-width: 1200px) 
+and (max-height: 500px) {
+    //HEADER
+    #headerText {
+        font-size: 3.8em;       
+    }
+    //title images
+    .titleImage img {
+        display: none;
     }
 }

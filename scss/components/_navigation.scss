@@ -83,16 +83,22 @@ h2 {
 
 //HEADER
 header {
+    position: relative;
     background-color: $color-black;
     height: 100vh;    
     border-bottom: $color-primary solid 25px;
+    background-image: url("../../images/background-lg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+//Header Content
 #headerContent {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
-    height: 100%;
+    height: 100%;    
 }
 
 #headerText {
@@ -101,7 +107,7 @@ header {
     font-weight: 500;
     font-size: 2.4em;
     position: relative;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 #charlie {
@@ -142,26 +148,8 @@ header {
 #closeBody {
     top: 220px;
     overflow-y: hidden;
+    transition: opacity .2s ease-in;
 }
-
-// #openBody {
-//     top: -80%;
-// }
-
-// #openH1{
-//     top: -50px;
-//     left: 10px;
-// }
-
-// #closeH1{
-//     top: 120px;
-//     left: 260px;
-// }
-
-// #closeBody {
-//     top: 220px;
-//     overflow-y: hidden;
-// }
 
 //Text Nav
 
@@ -185,7 +173,8 @@ header {
     margin: 0 auto;    
 }
 
-#contactButton h3 {    
+#contactButton h3 {  
+    cursor: pointer;  
     color: $color-primary; 
     font-size: 1.4em;
     border: $color-primary 4px solid;
@@ -268,7 +257,7 @@ main {
 
 //portfolio
 .sectionHeader {
-    font-size: 2.5em;
+    font-size: 2.5em;    
 }
 
 #portfolio {
@@ -288,7 +277,7 @@ main {
     height: 150px;
     border: solid 6px $color-primary;
     margin-top: 30px;
-    transition: .2s ease-in;
+    transition: all .2s ease-in;    
 }
 
 //ABOUT
@@ -340,8 +329,31 @@ main {
 }
 
 #letsTalk {
-    color: $color-primary;    
+    color: $color-primary;       
+    transition: color .5s ease-out; 
+    position: relative;   
+    display: inline-block;         
 }
+
+//3d animation
+
+#letsTalk:hover {    
+    color: $color-secondary;    
+}
+
+#letsTalk:before{
+    content: 'Hablemos.';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: transform .5s ease-in, color .5s ease-in;    
+}
+
+#letsTalk:hover:before {
+    color: $color-primary;      
+    transform: translate(3px,-3px);    
+}
+
 
 #underline {
     width: 230px;
@@ -353,7 +365,7 @@ main {
     width: 0%;
     height: 100%;
     background-color: $color-primary;
-    transition: width .4s ease-in;
+    transition: width .6s ease-in;
 }
 
 .showUnderlineAnimation {
@@ -413,12 +425,12 @@ main {
 //portfolio
 .projectImage:hover {    
     border: solid 6px $color-secondary;
+    box-shadow: 0 15px 20px -12px rgba(255, 255, 255, 0.2);
 }
 
 .projectCard a h3:hover {
-    color: $color-secondary;
+    color: $color-secondary;    
 }
-
 
 //ANIMATIONS
 //hamburger icon
